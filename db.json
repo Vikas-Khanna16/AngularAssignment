@@ -1,0 +1,20 @@
+{
+  "Employees": [
+    {
+      "id": 1,
+      "Name": "Vikas",
+      "UserName": "Vik123",
+      "Password": "Home@123",
+      "IsAdmin": true,
+      "MobileNumber": 9874563210
+    },
+    {
+      "id": 2,
+      "Name": "Raghu11",
+      "UserName": "Rag@123",
+      "Password": "Home@123",
+      "IsAdmin": false,
+      "MobileNumber": "98745632101"
+    }
+  ]
+}

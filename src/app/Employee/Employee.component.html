@@ -1,0 +1,42 @@
+
+<div class="login-wrapper" fxLayout="column" fxLayoutAlign="center">
+
+  <mat-card class="box">
+    <mat-card-header>
+      <mat-card-title>Employee Detail</mat-card-title>
+    </mat-card-header>
+
+    <form class="example-form" [formGroup] = "EmployeeForm">
+      <mat-card-content>
+        <mat-form-field class="example-full-width">
+          <!-- <mat-error  *ngIf="EmployeeFormControl.UserName.errors?.required">
+            UserName is required</mat-error> -->
+          <input matInput placeholder="Username" [(ngModel)] = "emp.UserName" formControlName="UserName">
+        </mat-form-field>
+
+        <mat-form-field class="example-full-width">
+          <!-- <mat-error  *ngIf="EmployeeFormControl.Password.errors?.required">
+            Password is required</mat-error> -->
+            <!-- <mat-error  *ngIf="EmployeeFormControl.Password.hasError('minlength')">
+              Password should be at least 5 chars long</mat-error> -->
+          <input matInput placeholder="Password"  [(ngModel)] = "emp.Password" formControlName="Password">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <!-- <mat-error  *ngIf="EmployeeFormControl.Name.errors?.required">
+            Name is required</mat-error> -->
+          <input matInput placeholder="Name"  [(ngModel)] = "emp.Name" formControlName="Name">
+        </mat-form-field>
+        <mat-form-field class="example-full-width">
+          <!-- <mat-error  *ngIf="EmployeeFormControl.MobileNumber.errors?.required">
+           Invalid Mobile Number</mat-error> -->
+          <input matInput placeholder="Mobile Number"  [(ngModel)] = "emp.MobileNumber" formControlName="MobileNumber">
+        </mat-form-field>
+        
+      </mat-card-content>
+      <button mat-stroked-button color="accent" (click) = "Save()"  class="btn-block">Save</button>
+      <button mat-stroked-button color="accent" (click) = "Cancel()"  class="btn-block">Cancel</button>
+
+    </form>
+  </mat-card>
+  
+</div>
